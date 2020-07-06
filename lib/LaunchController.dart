@@ -111,7 +111,8 @@ class LaunchView extends State<LaunchController> {
 
         this.img,
         _setupTitle(),
-        _setupFuncBtns(context)
+        _setupFuncBtns(context),
+        _setupText()
       ],
     );
   }
@@ -143,7 +144,7 @@ class LaunchView extends State<LaunchController> {
               ],
             ),
           ),
-          new Icon(
+          new Icon( 
             Icons.star,
             color: Colors.red[500],
           ),
@@ -191,5 +192,15 @@ class LaunchView extends State<LaunchController> {
       );
     }
 
-
+  Widget _setupText() {
+    return new Container(
+      padding: const EdgeInsets.all(32),
+      child: new Text(
+        '''
+Lake Oeschinen lies at the foot of the Blüemlisalp in the Bernese Alps. Situated 1,578 meters above sea level, it is one of the larger Alpine Lakes. A gondola ride from Kandersteg, followed by a half-hour walk through pastures and pine forest, leads you to the lake, which warms to 20 degrees Celsius in the summer. Activities enjoyed here include rowing, and riding the summer toboggan run.
+        ''',
+        softWrap: true,
+      ),
+    );
+  }
 }
