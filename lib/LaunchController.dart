@@ -158,7 +158,7 @@ class LaunchView extends State<LaunchController> {
   Widget _setupFuncBtns(BuildContext context) {
     Widget buttonSection = new Container(
       child: new Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           buildButtonColumn(Icons.call, 'CALL', context),
           buildButtonColumn(Icons.near_me, 'ROUTE', context),

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:english_words/english_words.dart';
 import 'package:myapp/LaunchController.dart';
+import 'package:myapp/LoginController.dart';
 
-// import 'LaunchController.dart';
-
-void main() => runApp(new LaunchController());
+void main() => runApp(new LoginController());
 
 class MyApp extends StatelessWidget {
   @override
