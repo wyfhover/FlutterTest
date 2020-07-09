@@ -12,7 +12,7 @@ class LoginView extends State<LoginController> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        primarySwatch: Colors.white,
+        primaryColor: Colors.white,
       ),
       home: _setupApp(),
     );
@@ -33,7 +33,14 @@ Widget _setupNaviBar() {
     title: Text(
       '登录',
     ),
-    actions: <Widget>[],
+    actions: [
+      new IconButton(
+          icon: new Icon(Icons.account_box), 
+          onPressed: (){
+            print('2333333');
+          }
+        )
+    ],
   );
 }
 
